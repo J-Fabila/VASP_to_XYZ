@@ -7,7 +7,7 @@ C code. Just copy (or download) the source code and compile it as usual. The pro
 
 Compile: 
 
-~$ gcc -o POSCARtoXYZ POSCARtoXYZ.c
+~$ gcc -o POSCARtoXYZ POSCARtoXYZ.c -lm 
 
 Run:
 
