@@ -67,7 +67,7 @@ strcpy(command,"Nat=$(cat selective | wc -l  ) " );
 system(command);
 strcpy(command,"");
 //strcat(command,"for((i=0;i<$(($Nat+1));i++));"); //SI da problemas el for quitarlo, igual funcioinara
-system(" awk '{print $4 \" \" $5 \" \" $6}' selective | 'F' '0' >>selectivedynamicsaux ");
+system(" awk '{print $4 \" \" $5 \" \" $6}' selective | tr 'F' '0' | tr  'T' '1' >>selectivedynamicsaux ");
 system( " echo \" \" >> selectivedynamics ; echo \" \" >>selectivedynamics ; cat selectivedynamicsaux >> selectivedynamics");
 system("rm selective selectivedynamicsaux");
 }
