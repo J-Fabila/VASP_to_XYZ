@@ -20,6 +20,7 @@ fi
 echo "Cartesian" >> $2
 rm aux
 head -$(($N+2)) $1 | tail -$N |  sort -u | awk '{print $2 "  "$3 "  " $4 }' >> aux1
-head -$(($N+2)) $1 | tail -$N |  sort -u | awk '{print  $5 "  " $6 "  " $7}' | tr '0' 'T' >> aux2 #tr '1' 'F'
+head -$(($N+2)) $1 | tail -$N |  sort -u | awk '{print  $5 "  " $6 "  " $7}' | tr '0' 'F' >> aux2 #tr '1' 'F'
+#Si es necesario agregar una funcion que lea linea por linea, que determine si es vacia y en ese casi rellene con T
 paste aux1 aux2 >> $2
 rm aux1 aux2
