@@ -19,7 +19,7 @@ C code. Just copy (or download) the source code and compile it as usual. The pro
 
 Shell script. .xyz don't has information about the cell, so the program don't  write the Vectors nor the scale factor but it carefully writes the appropriate coordinates with the corresponding atomic symbol. The program also recognize and transform selective dynamics. Copy or download the source code. Save it for example in XYZtoPOSCAR.sh. 
 
-##### Change file  permissions to executable mode.
+##### Change file  permissions to executable mode:
 ```
 ~$ chmod +x XYZtoPOSCAR.sh
 ```
