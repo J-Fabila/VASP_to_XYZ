@@ -1,9 +1,10 @@
+#! /bin/bash
 if [ -f $2 ]
 then
-mv $2 $2other
+mv $2 other_$2
 fi
 N=$(head -1 $1)
-head -$(($N+2)) $1 | tail -$N |  awk '{print $1 }' | sort -u >> aux
+head -$(($N+2))  $1 | tail -$N |  awk '{print $1 }' | sort -u >> aux
 M=$(wc -l aux | awk '{ print $1 }')
 for ((i=1;i<$(($M+1));i++))
 do
@@ -12,7 +13,7 @@ done
 echo " " >>$2
 for ((i=1;i<$(($M+1));i++))
 do
-echo -n "$( grep "$(head -$i aux | tail -1 )" $1 | wc -l )  ">> $2
+echo -n "$( grep -w "$(head -$i aux | tail -1 )" $1 | wc -l )  ">> $2
 done
 echo "  " >> $2
 Sel=$(head -$(($N+2)) $1 | tail -$N |  awk '{print $5 }' | grep . | wc -l )
