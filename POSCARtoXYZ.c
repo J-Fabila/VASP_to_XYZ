@@ -318,6 +318,17 @@ system("rm  aux selectivedynamics");
 
 int main(int argc, char **argv)
 {
+
+if(argc<3)
+{
+POSCARtoXYZ(argv[1],"tostd");
+system("cat tostd ; rm tostd");
+}
+else if(argc==3)
+{
 POSCARtoXYZ(argv[1],argv[2]);
+}
 return 0;
 }
+
+
