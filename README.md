@@ -17,7 +17,7 @@ The program takes the first argument for input and the second is the file where 
 ```
 ~$ ./POSCARtoXYZ File_to_convert(InputFile) File_converted(OutputFile).xyz
 ```
-You can put the program in some directory and add it to the environment variable PATH in your .bashrc, so you will can use the executable as any other bash command. For example, in your /home/$USER directory you can create the folder 'Programs', in there compile the code. Now open with any text editor (like Vi or Nano) the .bashrc file (it is in your /home/$USER/ directory). At the end of that file add the line
+You can put the program in some directory and add it to the environment variable PATH in your .bashrc, so you will can use the executable like any other bash command. For example, in your /home/$USER directory you can create the folder 'Programs', in there compile the code. Now open with any text editor (like Vi or Nano) the .bashrc file (it is in your /home/$USER/ directory). At the end of that file add the line
 ```
 ~$ PATH=$PATH:/home/$USER/Programs
 ```
