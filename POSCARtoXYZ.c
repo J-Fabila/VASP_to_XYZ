@@ -70,6 +70,7 @@ strcpy(command,"");
 system(" awk '{print $4 \" \" $5 \" \" $6}' selective | tr 'F' '0' | tr  'T' '1' >>selectivedynamicsaux ");
 system( " echo \" \" >> selectivedynamics ; echo \" \" >>selectivedynamics ; cat selectivedynamicsaux >> selectivedynamics");
 system("rm selective selectivedynamicsaux");
+system("rm commandi");
 }
 else
 {
