@@ -1,4 +1,4 @@
-#include<atomicpp.h>
+#include"atomicpp.h"
 Atomic_Structure est;
 
 int main(int argc, char **argv)
