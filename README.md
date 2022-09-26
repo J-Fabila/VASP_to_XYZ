@@ -39,7 +39,7 @@ Shell script. The .xyz file has no information about the cell, so the program do
 
 ##### Change file  permissions to executable mode:
 ```
-~$ chmod +x to_vasp
+~$ chmod u+x to_vasp
 ```
 ##### Run:
 ```
